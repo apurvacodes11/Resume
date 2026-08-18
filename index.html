@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Web Page</title>
+
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        margin: 0;
+        padding: 50px;
+        background-color: #f2f2f2;
+      }
+
+      .container {
+        background: white;
+        padding: 30px;
+        max-width: 500px;
+        margin: auto;
+        border-radius: 10px;
+      }
+
+      button {
+        padding: 10px 20px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>My Static Web Page</h1>
+      <p id="message">Welcome to my website!</p>
+
+      <button onclick="changeMessage()">Click Me</button>
+    </div>
+
+    <script>
+      function changeMessage() {
+        document.getElementById("message").innerHTML =
+          "Hello! This page is hosted using GitHub Pages.";
+      }
+    </script>
+  </body>
+</html>
